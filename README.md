@@ -1,12 +1,21 @@
-# LinkedIn AI Agent
+# LinkedIn Agent Pro
 
-This AI-powered LinkedIn assistant helps with:
-- Profile optimization
-- Job search
-- Lead generation
-- Content writing
-- Messaging
+A smart AI-powered assistant for LinkedIn powered by Gemini.
+
+## Features
+- Profile Optimization
+- Job Search Assistant
+- Lead Generator
+- Post Creator
+- Messaging Assistant
 
 ## Setup
-1. Add your Gemini API key to `.env`
-2. Run with `streamlit run app.py`
+1. Add your API key in `.streamlit/secrets.toml`:
+```toml
+GEMINI_API_KEY = "your_key_here"
+```
+2. Run the app:
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
