@@ -1,9 +1,8 @@
 import os
 import google.generativeai as genai
-from dotenv import load_dotenv
+import streamlit as st
 
-load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 def generate_text(prompt):
     model = genai.GenerativeModel("gemini-pro")
